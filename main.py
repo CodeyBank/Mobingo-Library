@@ -41,7 +41,7 @@ class MainWindow(QMainWindow):
         self.buttonHandler()
 
         # Connect to the database
-        self.db = MySQLdb.connect(host='localhost', user='root', password='Thebossm@#995', db="library", port=3310)
+        self.db = MySQLdb.connect(host='', user='', password='', db="library", port=)
         self.cur = self.db.cursor()
 
         # Adjust table widgets
@@ -244,7 +244,7 @@ class registerWindow(QDialog):
 
         self.count = 1
         # Connect to the database
-        self.db = MySQLdb.connect(host='localhost', user='root', password='Thebossm@#995', db="library", port=3310)
+        self.db = MySQLdb.connect(host='', user='', password='', db="library", port=)
         self.cur = self.db.cursor()  # Create a cursor
         # Call button handler function
         self.buttonHandler1()
